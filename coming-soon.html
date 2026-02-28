@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon - SaaS Company</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">SaaS Landing Page</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="coming-soon">
+      <div class="container-content">
+        <h2>Coming Soon</h2>
+        <p>We’re working hard to launch our new SaaS platform. Stay tuned!</p>
+
+        <div class="countdown">
+          Launching in: 30 Days
+        </div>
+
+        <form action="#" method="post" class="subscribe-form">
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn">Notify Me</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 My SaaS Company | <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <style>
+    /* Global Styles matched to index.html */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      /* Background image and fixed attachment from index.html */
+      background-image: url("images/saas company.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar matched to index.html layout and color */
+    .navbar {
+      background: #0d6efd;
+      padding: 15px 0;
+      color: white;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between; /* Pushes logo left, nav right */
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Content Styles */
+    .coming-soon {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .container-content {
+      background: rgba(255, 255, 255, 0.9); /* Slight overlay for readability */
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .coming-soon h2 {
+      font-size: 48px;
+      margin-bottom: 15px;
+      color: #333;
+      animation: slideUp 1s ease forwards;
+    }
+
+    .coming-soon p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      animation: slideUp 1.2s ease forwards;
+    }
+
+    .countdown {
+      font-size: 22px;
+      background: #0d6efd;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 30px;
+      font-weight: bold;
+      animation: slideUp 1.4s ease forwards;
+    }
+
+    /* Form and Buttons matched to index.html */
+    .subscribe-form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      gap: 10px;
+    }
+
+    .subscribe-form input {
+      flex: 1;
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+
+    .btn {
+      background: #0d6efd;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #084298;
+      transform: scale(1.1); /* Hover animation from index.html */
+    }
+
+    /* Footer matched to index.html */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+
+    .footer a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+
+    /* Animations from index.html */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container { flex-direction: column; gap: 10px; }
+      .nav-links { gap: 10px; }
+      .coming-soon h2 { font-size: 36px; }
+      .subscribe-form { flex-direction: column; }
+    }
+  </style>
+</body>
+</html>

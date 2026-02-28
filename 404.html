@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">SaaS Landing Page</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="error-page">
+      <div class="container-content">
+        <h2>404 - Page Not Found</h2>
+        <p>Oops! The page you’re looking for doesn’t exist or has been moved.</p>
+        <a href="index.html" class="btn">Go Back Home</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 My SaaS Company | <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <style>
+    /* Global Styles matched to index.html */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      /* Fixed background image from index.html */
+      background-image: url("images/saas company.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar matched to index.html layout and color */
+    .navbar {
+      background: #0d6efd;
+      padding: 15px 0;
+      color: white;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between; /* Pushes logo left, nav right */
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Error Page Content */
+    .error-page {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .container-content {
+      background: rgba(255, 255, 255, 0.9); /* Overlay for readability */
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .error-page h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      animation: slideUp 1s ease forwards;
+    }
+
+    .error-page p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      animation: slideUp 1.2s ease forwards;
+    }
+
+    /* Button matched to index.html */
+    .btn {
+      display: inline-block;
+      background: #0d6efd;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #084298;
+      transform: scale(1.1); /* Hover animation from index.html */
+    }
+
+    /* Footer matched to index.html */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+
+    .footer a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+
+    /* Animations from index.html */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container { flex-direction: column; gap: 10px; }
+      .nav-links { flex-direction: column; align-items: center; }
+      .error-page h2 { font-size: 36px; }
+    }
+  </style>
+</body>
+</html>

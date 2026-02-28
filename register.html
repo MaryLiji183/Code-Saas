@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - SaaS Company</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">SaaS Landing Page</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="register">
+      <div class="container">
+        <div class="register-header">
+          <h2>Create Your Account</h2>
+          <p>Sign up to access your SaaS dashboard and services.</p>
+        </div>
+
+        <form action="#" method="post" class="register-form">
+          <label for="name">Full Name</label><br>
+          <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+          <br><br>
+
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <br><br>
+
+          <label for="password">Password</label><br>
+          <input type="password" id="password" name="password" placeholder="Create Password" required>
+          <br><br>
+
+          <label for="confirm-password">Confirm Password</label><br>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+          <br><br>
+
+          <button type="submit" class="btn">Register</button>
+        </form>
+
+        <div class="extra-links">
+          <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 My SaaS Company | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      /* Matched from index.html */
+      background-image: url("images/saas company.jpg"); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* Navbar styling matched from index.html */
+    .navbar {
+      background: #0d6efd;
+      padding: 15px 0;
+      color: white;
+    }
+
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Register Section */
+    .register {
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .register-header h2, 
+    .register-header p {
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Ensures readability over image */
+    }
+
+    .register-header h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .register-header p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    /* Form Card */
+    .register-form {
+      background: rgba(255, 255, 255, 0.95); /* Slight transparency looks modern over images */
+      max-width: 400px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      text-align: left;
+    }
+
+    .register-form label {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .register-form input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .register-form input:focus {
+      border-color: #0d6efd;
+      box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+    }
+
+    /* Buttons matched from index.html */
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: #0d6efd;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #084298;
+      transform: scale(1.02);
+    }
+
+    .extra-links {
+      margin-top: 20px;
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .extra-links a {
+      color: #0d6efd;
+      background: white;
+      padding: 2px 8px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .extra-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer matched from index.html */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+
+    .footer a {
+      color: #ffffff;
+      text-decoration: underline;
+      margin: 0 5px;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .navbar .container {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 15px;
+      }
+    }
+  </style>
+</body>
+</html>

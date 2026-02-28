@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaaS Landing Page - V2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">SaaS Landing Page</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="container">
+      <h2>Welcome our SaaS Business Solutions</h2>
+      <p>Our services help you grow faster, smarter, and stronger.</p>
+      <a href="services.html" class="btn">Explore Services</a>
+    </div>
+  </section>
+
+  <section class="services container">
+    <div class="service">
+      <h3>Consulting</h3>
+      <p>Expert advice to guide your business decisions.</p>
+    </div>
+    <div class="service">
+      <h3>Design</h3>
+      <p>Modern, Responsive designs tailored to your brand.</p>
+    </div>
+    <div class="service">
+      <h3>Development</h3>
+      <p>Clean, Semantic code for scalable solutions.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to Get Started?</h2>
+      <a href="contact.html" class="btn btn-outline">Contact Us Today</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 MyCompany | <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <style>
+    /* Global Styles matched to index.html */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background-image: url("images/tech company .jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      animation: pageFade 1s ease-in;
+    }
+
+    /* Navbar - Matched to Index.html */
+    .navbar {
+      background: #0d6efd;
+      padding: 15px 0;
+      color: white;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: white; /* Changed from purple to match index.html */
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Intro Section */
+    .intro {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .intro h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: slideUp 1s ease forwards;
+    }
+
+    .intro p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      opacity: 0;
+      animation: slideUp 1.2s ease forwards;
+    }
+
+    /* Button - Matched to Index.html Blue */
+    .btn {
+      display: inline-block;
+      background: #0d6efd;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      opacity: 0;
+      animation: zoomIn 1s ease forwards;
+      animation-delay: 0.8s;
+    }
+
+    .btn:hover {
+      background: #084298;
+      transform: scale(1.1);
+    }
+
+    /* Services Grid - Keeping the V2 Grid Layout but using V1 Colors */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 50px 0;
+    }
+
+    .service {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      transition: 0.4s;
+    }
+
+    .service h3 {
+      color: #0d6efd; /* Matched to theme blue */
+      margin-bottom: 15px;
+    }
+
+    .service:hover {
+      transform: translateY(-12px) scale(1.02);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    }
+
+    /* CTA Section - Matched to Index.html Blue */
+    .cta {
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 25px;
+      background: #222;
+      color: white;
+    }
+
+    .footer a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+
+    /* Animations */
+    @keyframes pageFade { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes zoomIn {
+      from { transform: scale(0.7); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .container { flex-direction: column; gap: 15px; }
+      .services { grid-template-columns: 1fr; }
+    }
+  </style>
+</body>
+</html>

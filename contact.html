@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SaaS Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">SaaS Landing Page</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact">
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <p>We’d love to hear from you. Fill out the form below or reach us via email.</p>
+        <div class="contact-info">
+          <p>Email: support@saascompany.com</p>
+          <p>Phone: +1 (555) 123-4567</p>
+          <p>Address: 123 SaaS Street, Tech City</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 MyCompany | <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <style>
+    /* Global Styles matched to index.html */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background-image: url("images/saas company.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      animation: pageFade 1s ease-in;
+    }
+
+    /* Navbar matched to index.html */
+    .navbar {
+      background: #0d6efd;
+      padding: 15px 0;
+      color: white;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact Section Styles */
+    .contact {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .contact h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      animation: slideUp 1s ease forwards;
+    }
+
+    .contact p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      animation: slideUp 1.2s ease forwards;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: inline-block;
+      transition: 0.4s;
+    }
+
+    .contact-info:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    }
+
+    /* Footer matched to index.html */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+
+    /* Animations */
+    @keyframes pageFade { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</body>
+</html>

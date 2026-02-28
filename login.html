@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - SaaS Company</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">SaaS Landing Page</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="login-container">
+    <section class="login">
+      <h2>Welcome Back</h2>
+      <p>Log in to manage your projects.</p>
+      
+      <form class="login-form">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <p class="signup-link">Don't have an account? <a href="register.html">Sign up here</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 My SaaS Company | <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <style>
+    /* Global Styles from index.html */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      /* Fixed background image from index.html */
+      background-image: url("images/saas company.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar Alignment */
+    .navbar {
+      background: #0d6efd; /* Primary blue from index.html */
+      padding: 15px 0;
+      color: white;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Login Box Styles */
+    .login-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .login {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      text-align: center;
+      animation: slideUp 1s ease forwards;
+    }
+
+    .login h2 {
+      margin-bottom: 10px;
+      color: #0d6efd; /* Updated to brand blue */
+    }
+
+    .login-form label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+    }
+
+    .login-form input:focus {
+      border-color: #0d6efd;
+      outline: none;
+      box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+    }
+
+    /* Button alignment with index.html CTA */
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: #0d6efd;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0b5ed7;
+    }
+
+    .signup-link {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .signup-link a {
+      color: #0d6efd;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Footer Styles */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+
+    .footer a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+
+    /* Animation Keyframes from index.html */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</body>
+</html>

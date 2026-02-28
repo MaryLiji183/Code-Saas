@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAAS Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="navbar">
+ <!----    
+<nav>
+  <a href="index.html">Home</a> |<br>
+  <a href="index-v2.html">Home V2</a> |<br>
+  <a href="pricing.html">Pricing</a> |<br>
+  <a href="blog.html">Blog</a> |<br>
+  <a href="portfolio.html">Portfolio</a> |<br>
+  <a href="contact.html">Contact</a> |<br>
+  <a href="register.html">Register</a> |<br>
+  <a href="admin-dashboard.html">Admin</a> |<br>
+  <a href="user-dashboard.html">User</a>
+</nav>
+-->
+    <div class="container">
+      <h1 class="logo">SaaS Landing Page</h1>
+     <nav>
+     
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<section class="intro">
+  <div class="container">
+    <h2>We Provide Modern Business Solutions</h2>
+    <p>Our services help you Grow faster, Smarter, and Stronger.</p>
+    <a href="services.html" class="btn">Explore Services</a>
+  </div>
+</section>
+
+<section class="services container">
+    <div class="service">
+      <h3>Consulting</h3>
+      <p>Expert advice to guide your business decisions.</p>
+    </div>
+    <div class="service">
+      <h3>Design</h3>
+      <p>Modern, Responsive designs tailored to your brand.</p>
+    </div>
+    <div class="service">
+      <h3>Development</h3>
+      <p>Clean, Semantic code for scalable solutions.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to Get Started?</h2>
+      <a href="contact.html" class="btn">Contact Us Today</a>
+    </div>
+  </section>
+
+<footer class="footer">
+    <p>&copy; 2026 MyCompany | <a href="#">Privacy Policy</a></p>
+ </footer>
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+body{
+  
+  line-height:1.6;
+  color:#333;
+
+  background-image: url("images/saas company.jpg"); /* change to your real image name */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.navbar{
+  background:#0d6efd;
+padding:15px 0;
+  color:white;
+}
+
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:bold;
+}
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:20px;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.nav-links a:hover{
+  text-decoration:underline;
+}
+
+
+.intro{
+  text-align:center;
+  padding:80px 20px;
+  
+}
+
+.intro h2{
+  font-size:36px;
+  margin-bottom:15px;
+}
+
+.intro p{
+  font-size:18px;
+  margin-bottom:25px;
+}
+
+.btn{
+  background:#0d6efd;
+  color:white;
+  padding:10px 20px;
+  border:none;
+  border-radius:5px;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+.btn:hover{
+  background:#084298;
+}
+
+.services{
+  display:flex;
+  gap:20px;
+  padding:50px 0;
+}
+
+.service{
+  flex:1;
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+  text-align:center;
+}
+
+.cta{
+  background:#0d6efd;
+  color:white;
+  text-align:center;
+  padding:50px 20px;
+}
+
+
+.footer{
+  text-align:center;
+  padding:20px;
+  background:#222;
+  color:white;
+}
+
+
+@media(max-width:768px){
+  .services{
+    flex-direction:column;
+  }
+
+  .nav-links{
+    flex-direction:column;
+    background:#0d6efd;
+    position:absolute;
+    top:60px;
+    right:0;
+    width:200px;
+    display:none;
+    padding:20px;
+  }
+
+  .nav-links.show{
+    display:block;
+  }
+
+  .menu-btn{
+    display:block;
+    cursor:pointer;
+  }
+}
+
+.menu-btn{
+  display:none;
+  font-size:24px;
+}
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.navbar {
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+.intro h2 {
+  animation: slideUp 1s ease forwards;
+}
+
+.intro p {
+  animation: slideUp 1.2s ease forwards;
+}
+
+.intro .btn {
+  animation: slideUp 1.4s ease forwards;
+}
+
+
+.service {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+}
+
+
+.service.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+</style>
+</body>
